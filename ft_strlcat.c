@@ -1,4 +1,3 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -7,7 +6,7 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 13:02:51 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/05 09:51:05 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/05 12:41:13 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +19,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	srcsize;
 	int		i;
 	int		j;
-
 
 	destsize = ft_strlen(dst);
 	srcsize = ft_strlen(src);
@@ -37,7 +35,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[i + 1] = '\0';
 	return (destsize + srcsize);
 }
-
 
 /*
 int main()

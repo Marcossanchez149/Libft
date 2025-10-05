@@ -6,10 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 18:15:11 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/05 09:21:46 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/05 13:19:53 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//Copia src en dest basandose en el tamaño n
 #include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)

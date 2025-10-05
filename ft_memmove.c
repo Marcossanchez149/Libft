@@ -6,7 +6,7 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 11:27:36 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/05 09:20:32 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/05 13:43:50 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memmove(void *dest, const void *src, size_t count)
 	d = dest;
 	s = src;
 	i = 0;
-	while (d[i] != '\0')
+	while (d[i] != '\0' && i < count)
 	{
 		d[i] = s[i];
 		i++;

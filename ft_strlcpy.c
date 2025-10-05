@@ -6,7 +6,7 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 11:57:14 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/05 09:41:51 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/05 13:41:31 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 size_t	ft_strlcpy(char *s1, const char *s2, size_t n)
 {
-	size_t				i;
-	unsigned char		*d;
-	const unsigned char	*s;
+	size_t	i;
 
 	i = 0;
 	while (i < n && s2[i] != '\0')
