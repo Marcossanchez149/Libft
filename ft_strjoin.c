@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 11:28:56 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/07 11:55:06 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/09 09:17:26 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //Concatena dos strings reservando con malloc su tamaño
 #include "libft.h"
-#include <malloc.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 13:18:28 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/07 12:12:04 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/09 14:53:52 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 # define LIBFT_H
 # include <unistd.h>
+#include <stdlib.h>
+
 
 void	ft_bzero(void *s, size_t n);
 int		ft_isalnum(char letter);
@@ -42,5 +44,6 @@ char	*ft_strdup(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
+char    **ft_split(char const *s, char c);
 
 #endif

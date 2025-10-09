@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 09:50:41 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/07 10:33:24 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/09 09:16:55 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //Reserva memoria y lo pone a cero
 #include "libft.h"
-#include <malloc.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

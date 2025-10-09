@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 10:59:24 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/07 11:50:54 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/09 09:17:20 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //Crea un substring desde start de s hasta el len
 #include "libft.h"
-#include <malloc.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
