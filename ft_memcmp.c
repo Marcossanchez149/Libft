@@ -6,7 +6,7 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 12:05:10 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/05 12:39:08 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/12 12:37:20 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	int					i;
+	size_t				i;
 	const unsigned char	*ptr1;
 	const unsigned char	*ptr2;
 

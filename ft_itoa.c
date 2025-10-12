@@ -1,32 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/30 12:43:05 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/12 12:33:26 by marcsan2         ###   ########.fr       */
+/*   Created: 2025/10/10 10:58:43 by marcsan2          #+#    #+#             */
+/*   Updated: 2025/10/12 13:23:23 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(char letter)
+static int	sizeofint(int n)
 {
-	if ((letter >= 'a' && letter <= 'z') || (letter >= 'A' && letter <= 'Z'))
+	int	i;
+
+	i = 0;
+	while (n > 0)
 	{
-		return (1);
+		n = n / 10;
+		i ++;
 	}
-	return (0);
+	return (i);
+}
+
+char	*ft_itoa(int n)
+{
+	char	*result;
+	int		i;
+	int		size;
+
+	i = 0;
+	size = sizeofint(n);
+	result = (char *) malloc(size);
+	return (result);
 }
 
 /*
 #include <stdio.h>
-int	main()
+int	main(void)
 {
-	char prueba = '1';
-	int to_write = ft_isalpha(prueba);
-	printf("%d", to_write);
-	return(0);
+	char	*resultado;
+	unsigned int		prueba;
+
+	prueba = -1;
+	resultado = ft_itoa(prueba);
+	
 }*/

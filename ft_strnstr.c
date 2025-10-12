@@ -6,7 +6,7 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 12:41:50 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/05 14:28:49 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/12 12:41:06 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	int		i;
+	size_t	i;
 	int		littlelen;
 
 	i = 0;

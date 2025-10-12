@@ -6,7 +6,7 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 14:29:07 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/05 14:44:28 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/10 16:03:48 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ int	ft_atoi(const char *str)
 		to_return = to_return * (-1);
 	return (to_return);
 }
+
 /*#include <stdio.h>
 int main(int argc,char **argv)
 {

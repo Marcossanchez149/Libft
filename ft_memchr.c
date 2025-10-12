@@ -6,7 +6,7 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 11:18:32 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/05 13:18:54 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/12 12:41:00 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int					i;
+	size_t				i;
 	const unsigned char	*ptr;
 
 	ptr = (const unsigned char *)s;
