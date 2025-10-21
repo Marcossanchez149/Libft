@@ -6,10 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 14:29:07 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/10 16:03:48 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/21 13:51:37 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//pasa de *str a int
 #include "libft.h"
 
 int	ft_atoi(const char *str)
@@ -25,7 +26,7 @@ int	ft_atoi(const char *str)
 		|| str[cont] == '\r' || str[cont] == '\t'
 		|| str[cont] == '\f' || str[cont] == '\v')
 		cont++;
-	while (str[cont] == '+' || str[cont] == '-')
+	if (str[cont] == '+' || str[cont] == '-')
 	{
 		if (str[cont] == '-')
 			neg++;

@@ -1,39 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/30 12:42:49 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/21 12:36:41 by marcsan2         ###   ########.fr       */
+/*   Created: 2025/10/21 11:07:55 by marcsan2          #+#    #+#             */
+/*   Updated: 2025/10/21 13:10:28 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int letter)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	if (letter >= 00 && letter <= 127)
+	t_list	*buffer;
+	t_list	*node;
+	t_list	*new_list;
+
+	if (!lst || !f || !del)
+		return (0);
+	buffer = NULL;
+	new_list = NULL;
+	while (lst)
 	{
-		return (1);
+		buffer = f(lst->content);
+		node = ft_lstnew(buffer);
+		if (!node)
+		{
+			del(buffer);
+			ft_lstclear(&new_list, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&new_list, node);
+		lst = lst->next;
 	}
-	return (0);
+	return (new_list);
 }
-
-/*
-#include <stdio.h>
-
-int main(void)
-{
-   int ch;
- 
-   for (ch = 0x7c; ch <= 0x82; ch++) {
-      printf("%#04x    ", ch);
-      if (ft_isascii(ch))
-         printf("Es: %c\n", ch);
-      else
-         printf("No es ASCII\n");
-   }
-   return 0;
-}*/

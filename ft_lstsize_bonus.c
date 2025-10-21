@@ -1,39 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/30 12:42:49 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/21 12:36:41 by marcsan2         ###   ########.fr       */
+/*   Created: 2025/10/16 13:05:00 by marcsan2          #+#    #+#             */
+/*   Updated: 2025/10/16 13:39:17 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int letter)
+int	ft_lstsize(t_list *lst)
 {
-	if (letter >= 00 && letter <= 127)
+	int	cont;
+
+	cont = 0;
+	while (lst != NULL)
 	{
-		return (1);
+		lst = lst->next;
+		cont ++;
 	}
-	return (0);
+	return (cont);
 }
-
-/*
-#include <stdio.h>
-
-int main(void)
-{
-   int ch;
- 
-   for (ch = 0x7c; ch <= 0x82; ch++) {
-      printf("%#04x    ", ch);
-      if (ft_isascii(ch))
-         printf("Es: %c\n", ch);
-      else
-         printf("No es ASCII\n");
-   }
-   return 0;
-}*/

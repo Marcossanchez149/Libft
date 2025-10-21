@@ -6,7 +6,7 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 10:47:04 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/05 12:39:34 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/21 12:11:28 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,17 @@ char	*ft_strrchr(const char *s, int c)
 
 	ssize = ft_strlen(s);
 	i = ssize;
-	while (i > 0)
+	while (i >= 0)
 	{
-		if (s[i] == c)
+		if (s[i] == (char)c)
 		{
 			return ((char *)&s[i]);
 		}
 		i --;
 	}
-	return ((char *)&s[ssize]);
+	if ((char)c == 0)
+		return ((char *)&s[ssize]);
+	return (0);
 }
 
 /*

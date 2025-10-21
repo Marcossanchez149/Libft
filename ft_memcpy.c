@@ -6,7 +6,7 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 18:15:11 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/12 12:40:02 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/21 13:01:21 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t				i;
 	unsigned char		*d;
-	const unsigned char	*s;
+	const unsigned char	*s;	
 
+	if (!dest && !src)
+		return (NULL);
 	d = dest;
 	s = src;
 	i = 0 ;

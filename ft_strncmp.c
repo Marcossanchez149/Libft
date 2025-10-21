@@ -6,10 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 10:52:14 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/12 12:36:54 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/21 12:15:51 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//Compara dos cadenas hasta n
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
@@ -17,11 +18,11 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	size_t	i;
 
 	i = 0;
-	while (i < n)
+	while (i < n && (s1[i] != '\0' || s2[i] != '\0'))
 	{
-		if (s1[i] > s2[i])
+		if ((unsigned char)s1[i] > (unsigned char)s2[i])
 			return (1);
-		if (s1[i] < s2[i])
+		if ((unsigned char)s1[i] < (unsigned char)s2[i])
 			return (-1);
 		i++;
 	}

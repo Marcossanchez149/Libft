@@ -1,39 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/07 10:37:53 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/21 12:46:56 by marcsan2         ###   ########.fr       */
+/*   Created: 2025/10/14 13:52:18 by marcsan2          #+#    #+#             */
+/*   Updated: 2025/10/16 10:01:18 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Crea un nuevo espacio de memoria y copia lo que haya en el puntero que recibe
+//Envia char a char de un string a una funcion y actualiza el char con el result
 #include "libft.h"
 
-char	*ft_strdup(const char *s)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*punt;
+	int		i;
+	char	*final;
 	int		size;
 
-	size = ft_strlen(s)+1;
-	punt = malloc(size);
-	if (!punt)
+	i = 0;
+	size = ft_strlen(s) +1 ;
+	final = (char *)malloc(size * sizeof(char));
+	if (!final)
 		return (NULL);
-	ft_strlcpy(punt, s, size);
-	return (punt);
+	while (s[i] != '\0')
+	{
+		final[i] = f(i, s[i]);
+		i++;
+	}
+	final[i] = '\0';
+	return (final);
 }
-
-/*
-#include <stdio.h>
-int main(void)
-{
-   char *string = "this is a copy";
-   char *newstr;
-   if ((newstr = ft_strdup(string)) != NULL)
-      printf("The new string is: %s\n", newstr);
-	free(newstr);
-   return 0;
-}*/

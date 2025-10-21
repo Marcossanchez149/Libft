@@ -1,39 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/30 12:42:49 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/21 12:36:41 by marcsan2         ###   ########.fr       */
+/*   Created: 2025/10/21 09:47:26 by marcsan2          #+#    #+#             */
+/*   Updated: 2025/10/21 12:42:40 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//elimina lo que haya de contenid en lst
 #include "libft.h"
 
-int	ft_isascii(int letter)
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	if (letter >= 00 && letter <= 127)
-	{
-		return (1);
-	}
-	return (0);
+	if (lst)
+		del(lst->content);
+	free(lst);
 }
-
-/*
-#include <stdio.h>
-
-int main(void)
-{
-   int ch;
- 
-   for (ch = 0x7c; ch <= 0x82; ch++) {
-      printf("%#04x    ", ch);
-      if (ft_isascii(ch))
-         printf("Es: %c\n", ch);
-      else
-         printf("No es ASCII\n");
-   }
-   return 0;
-}*/

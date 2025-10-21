@@ -6,7 +6,7 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 11:28:56 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/10 10:13:44 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/14 12:02:48 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,30 +15,17 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	size;
+	size_t	sizetotal;
+	size_t	sizefirst;
 	char	*punt;
-	int		conta;
-	int		contb;
 
-	size = ft_strlen(s1) + ft_strlen(s2);
-	punt = malloc(size);
+	sizefirst = ft_strlen(s1) + 1;
+	sizetotal = sizefirst + ft_strlen(s2);
+	punt = (char *)malloc(sizetotal * sizeof(char));
 	if (punt == NULL)
 		return (NULL);
-	conta = 0;
-	contb = 0;
-	while (s1[conta] != '\0')
-	{
-		punt[contb] = s1[conta];
-		conta ++;
-		contb ++;
-	}
-	conta = 0;
-	while (s2[conta] != '\0')
-	{
-		punt[contb] = s2[conta];
-		conta ++;
-		contb ++;
-	}
+	ft_strlcpy(punt, s1, sizefirst);
+	ft_strlcat(punt, s2, sizetotal);
 	return (punt);
 }
 

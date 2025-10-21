@@ -6,12 +6,12 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 10:22:11 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/12 13:19:31 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/14 13:13:33 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*#include <stdio.h>*/
+//#include <stdio.h>
 
 static int	word_len(char const *s, char c)
 {
@@ -74,7 +74,7 @@ static char	**principal_loop(char const *s, int words, char c, char	**result)
 			else
 				j ++;
 		}
-		while (s[0] && s[0] != c)
+		while (s[0] != '\0' && s[0] != c)
 			s ++;
 	}
 	result[j] = NULL;
@@ -91,7 +91,7 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] == c && s[i++] != c && s[i] != '\0')
+		if (s[i] != c && (i == 0 || s[i - 1] == c))
 			cont ++;
 		i ++;
 	}
@@ -109,7 +109,7 @@ int main(void)
 {
     char **result;
     int i;
-    result = ft_split("  Hola mundo desde C tus muertos  ", ' ');
+    result = ft_split("lorem ipsumadipiscing elus. Suspendisse", ' ');
     i = 0;
     while (result[i])
     {

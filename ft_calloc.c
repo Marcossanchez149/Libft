@@ -6,7 +6,7 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 09:50:41 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/12 13:13:16 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/14 11:24:52 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*punt;
 
-	punt = malloc(nmemb);
+	punt = (void *)malloc(nmemb * size);
 	if (nmemb == 0 || size == 0)
 		return (punt);
-	if (punt)
-		return (NULL);
-	ft_memset(punt, 0, nmemb);
+	if (!punt)
+		return (punt);
+	ft_bzero(punt, nmemb * size);
 	return (punt);
 }
 

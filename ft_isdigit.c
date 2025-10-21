@@ -6,13 +6,13 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 12:43:20 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/05 09:20:24 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/21 12:40:20 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(char letter)
+int	ft_isdigit(int letter)
 {
 	if (letter >= '0' && letter <= '9')
 		return (1);

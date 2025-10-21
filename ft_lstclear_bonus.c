@@ -1,39 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/30 12:42:49 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/21 12:36:41 by marcsan2         ###   ########.fr       */
+/*   Created: 2025/10/21 09:56:20 by marcsan2          #+#    #+#             */
+/*   Updated: 2025/10/21 12:44:42 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//Elimina y libera el nodo ’lst’ dado y todos los consecutivos de ese nodo
 #include "libft.h"
 
-int	ft_isascii(int letter)
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	if (letter >= 00 && letter <= 127)
+	t_list	*temp;
+
+	if (!lst || !*lst)
+		return ;
+	while (*lst)
 	{
-		return (1);
+		temp = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = temp;
 	}
-	return (0);
 }
-
-/*
-#include <stdio.h>
-
-int main(void)
-{
-   int ch;
- 
-   for (ch = 0x7c; ch <= 0x82; ch++) {
-      printf("%#04x    ", ch);
-      if (ft_isascii(ch))
-         printf("Es: %c\n", ch);
-      else
-         printf("No es ASCII\n");
-   }
-   return 0;
-}*/
