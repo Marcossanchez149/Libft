@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 13:18:38 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/05 13:42:27 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:11:44 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Se rellena dest con c count numero de veces
+//Dest is filled with c count number of times 
 #include "libft.h"
 
 void	*ft_memset(void *dest, int c, size_t count)

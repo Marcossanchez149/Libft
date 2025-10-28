@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 10:59:24 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/14 11:40:01 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:18:05 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Crea un substring desde start de s hasta el len
+//Create a substring from start of s to len
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)

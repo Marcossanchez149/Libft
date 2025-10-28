@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 09:50:41 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/14 11:24:52 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:07:21 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Reserva memoria y lo pone a cero
+//Gets memory and puts it to 0
 #include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)

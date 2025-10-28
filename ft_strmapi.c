@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:52:18 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/16 10:01:18 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:16:08 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Envia char a char de un string a una funcion y actualiza el char con el result
+//Send char to char of a string to a function and update with the result
 #include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))

@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 10:22:28 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/21 12:09:06 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:12:54 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Busca la primera aparación del caracter c en s y devulve un puntero a esta
+//Search for first aparition of c in s and return a pointer to that
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)

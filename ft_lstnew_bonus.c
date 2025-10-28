@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 12:08:02 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/21 12:01:21 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 15:33:19 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Crea un nuevo nodo y añada el contenido
+//Creates new node and adds content
 #include "libft.h"
 
 t_list	*ft_lstnew(void *content)

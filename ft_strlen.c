@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 12:53:19 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/05 13:41:01 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:15:37 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Devuelve el tamaño
+//Return size
 #include "libft.h"
 
 int	ft_strlen(const char *str)

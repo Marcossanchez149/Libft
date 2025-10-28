@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 11:28:56 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/14 12:02:48 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:14:57 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Concatena dos strings reservando con malloc su tamaño
+//Concatenate two strings saving malloc with their size
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)

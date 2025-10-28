@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 11:18:32 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/12 12:41:00 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:09:45 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Busca la primera ocurrecia de c en s y devuelve un puntero a la posición
+//Search first aparition of c in s and return pointer to the position
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)

@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 10:37:53 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/21 12:46:56 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:13:24 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Crea un nuevo espacio de memoria y copia lo que haya en el puntero que recibe
+//Creates a new memory space and copy everithing in the  pointer
 #include "libft.h"
 
 char	*ft_strdup(const char *s)

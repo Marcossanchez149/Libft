@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 17:19:21 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/16 10:01:26 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:13:50 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Envia el puntero char a char de un string a una funcion que recibe
+//Send the pointer char to char of a string to a function recibed
 #include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))

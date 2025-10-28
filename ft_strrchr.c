@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 10:47:04 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/21 12:11:28 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:17:31 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Busca la última aparación del caracter c en s y devulve un puntero a esta
+//Find the last occurrence of character c in s and return a pointer to it
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)

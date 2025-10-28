@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 17:52:29 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/05 13:11:17 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:07:05 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Pone todo a null
+//Everithing to null
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)

@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 14:18:31 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/21 09:46:42 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:07:45 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Añade un nuevo nodo al final
+//Add new node in the end
 #include "libft.h"
 
 void	ft_lstadd_back(t_list **lst, t_list *new)

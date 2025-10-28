@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 10:41:25 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/21 13:19:39 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:12:13 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Escribe un int en fd
+//Writes an int in fd
 #include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)

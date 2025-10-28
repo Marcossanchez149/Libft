@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 14:29:07 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/21 13:51:37 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:06:56 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//pasa de *str a int
+//from *str to int
 #include "libft.h"
 
 int	ft_atoi(const char *str)

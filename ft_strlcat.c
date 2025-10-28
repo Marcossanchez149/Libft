@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 13:02:51 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/12 14:34:30 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:15:27 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Concatena dos strings y devuelve el tamaño de ambos incluyendo el valor \0
+//concatenate two strings and returns the size including \0
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)

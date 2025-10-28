@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 12:11:38 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/14 12:22:56 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:17:51 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Recibe dos strings uno es las letras que hay que quitar al otro
+//Receive two strings, one is the letters that must be removed from the other
 #include "libft.h"
 
 static int	check_letter(char letra, char const *set)

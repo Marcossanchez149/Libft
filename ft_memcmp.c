@@ -6,11 +6,11 @@
 /*   By: marcsan2 <marcsan2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/05 12:05:10 by marcsan2          #+#    #+#             */
-/*   Updated: 2025/10/12 12:37:20 by marcsan2         ###   ########.fr       */
+/*   Updated: 2025/10/23 10:10:40 by marcsan2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Compara dos strings por char hasta n, si n es mayor que el tamaño puede fallar
+//Compare two string char by char till n,if n is bigger than size it can fail
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
@@ -26,10 +26,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		return (0);
 	while (i < n)
 	{
-		if (ptr1[i] > ptr2[i])
-			return (1);
-		if (ptr1[i] < ptr2[i])
-			return (-1);
+		if (ptr1[i] != ptr2[i])
+			return (ptr1[i] - ptr2[i]);
 		i++;
 	}
 	return (0);
